@@ -113,7 +113,7 @@ document.getElementById("second-card").addEventListener('click',function(){
         container.appendChild(tr);
         });
         
-    // Rhombus 
+    // Pentagon 
     document.getElementById("Pentagon").addEventListener('click',function(){
         serial += 1;
         const PentagonTitleData =document.getElementById('Pentagon-title').innerText;
@@ -137,6 +137,35 @@ document.getElementById("second-card").addEventListener('click',function(){
         <td>${1}</td>
         <td>${PentagonTitleData}</td>
         <td>${PentagonTotal}</td>
+        `;
+        container.appendChild(tr);
+        });
+
+
+    // Ellipse 
+    document.getElementById("Ellipse").addEventListener('click',function(){
+        serial += 1;
+        const EllipseTitleData =document.getElementById('Ellipse-title').innerText;
+        const a =10;
+        const b =4;
+        const pi =3.14;
+        // const subTotal=document.getElementById('all-calculation')
+        // if (
+        //     secondCardInput1 == "" ||
+        //     secondCardInput2 == "" ||
+        //     secondCardInput1<= 0 ||
+        //     secondCardInput2 <= 0
+           
+        //   ) {
+        //     return alert("please enter any valid number");
+        //   }
+        const EllipseTotal  = a *b*pi;
+        const container =document.getElementById('table-container');
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+        <td>${1}</td>
+        <td>${EllipseTitleData}</td>
+        <td>${EllipseTotal}</td>
         `;
         container.appendChild(tr);
         });
