@@ -6,15 +6,15 @@ const firstInputData =document.getElementById('first-input').value;
 const secondInputData =document.getElementById('second-input').value;
 const multiplyData = 0.5;
 const subTotal=document.getElementById('all-calculation')
-// if (
-//     firstInputData == "" ||
-//     secondInputData == "" ||
-//     firstInputData<= 0 ||
-//     secondInputData <= 0
+if (
+    firstInputData == "" ||
+    secondInputData == "" ||
+    firstInputData<= 0 ||
+    secondInputData <= 0
    
-//   ) {
-//     return alert("please enter any valid number");
-//   }
+  ) {
+    return alert("please enter any valid number");
+  }
 const firstTotal = parseFloat(firstInputData) * parseFloat(secondInputData) *multiplyData;
 const container =document.getElementById('table-container');
 const tr = document.createElement("tr");
@@ -22,6 +22,7 @@ tr.innerHTML = `
 <td>${1}</td>
 <td>${firstTitleData}</td>
 <td>${firstTotal}</td>
+<h1>cm2</h1>
 `;
 container.appendChild(tr);
 });
@@ -35,7 +36,7 @@ document.getElementById("second-card").addEventListener('click',function(){
     const secondCardInput1 =document.getElementById('second-data-input1').value;
     const secondCardInput2 =document.getElementById('second-data-input').value;
     const multiplyData = 0.5;
-    // const subTotal=document.getElementById('all-calculation')
+
     // if (
     //     secondCardInput1 == "" ||
     //     secondCardInput2 == "" ||
@@ -53,6 +54,7 @@ document.getElementById("second-card").addEventListener('click',function(){
     <td>${1}</td>
     <td>${secondTitleData}</td>
     <td>${secondTotal}</td>
+    <h1>cm2</h1>
     `;
     container.appendChild(tr);
     });
@@ -81,6 +83,7 @@ document.getElementById("second-card").addEventListener('click',function(){
         <td>${1}</td>
         <td>${thirdTitleData}</td>
         <td>${thirdTotal}</td>
+        <h1>cm2</h1>
         `;
         container.appendChild(tr);
         });
@@ -109,6 +112,7 @@ document.getElementById("second-card").addEventListener('click',function(){
         <td>${1}</td>
         <td>${RhumbusTitleData}</td>
         <td>${RhumbusTotal}</td>
+        <h1>cm2</h1>
         `;
         container.appendChild(tr);
         });
@@ -137,6 +141,7 @@ document.getElementById("second-card").addEventListener('click',function(){
         <td>${1}</td>
         <td>${PentagonTitleData}</td>
         <td>${PentagonTotal}</td>
+        <h1>cm2</h1>
         `;
         container.appendChild(tr);
         });
@@ -159,13 +164,15 @@ document.getElementById("second-card").addEventListener('click',function(){
         //   ) {
         //     return alert("please enter any valid number");
         //   }
-        const EllipseTotal  = a *b*pi;
+        const EllipseTotal = a *b*pi;
+        EllipseTotal.toFixed(2)
         const container =document.getElementById('table-container');
         const tr = document.createElement("tr");
         tr.innerHTML = `
         <td>${1}</td>
         <td>${EllipseTitleData}</td>
         <td>${EllipseTotal}</td>
+        <h1>cm2</h1>
         `;
         container.appendChild(tr);
         });
