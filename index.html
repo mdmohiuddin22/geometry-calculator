@@ -25,11 +25,11 @@
     <div class="">
         <!-- grid md:grid-cols-4  sm:grid-cols-1 -->
         <div class="grid md:grid-cols-4  sm:grid-cols-1">
-            <div id="first-card" class="bg-lime-100 w-60 h-80 text-center mb-5 ml-5 flex-col items-center"><img class="w-1/2 mx-16 mb-3 pt-3" src="images/triangle.png" alt="">
+            <div class="bg-lime-100 w-60 h-80 text-center mb-5 ml-5 flex-col items-center"><img class="w-1/2 mx-16 mb-3 pt-3" src="images/triangle.png" alt="">
             <h2 id="first-card-title" class="font-bold text-3xl my-2 ">Triangle</h2>
             <h3 class="font-semibold mb-2">Area (A) =0.5 X b X h</h3>
             <h3 class="flex justify-center gap-3 mb-3"><input class="w-20" type="text" name="" id="first-input" placeholder="b">  cm <input id="second-input"  class="w-20" type="text" placeholder="h"> cm</h3>
-            <button class="bg-cyan-600 h-10 text-white font-semibold text-lg  px-16 rounded-md" >Calculate</button>   
+            <button id="first-card" class="bg-cyan-600 h-10 text-white font-semibold text-lg  px-16 rounded-md" >Calculate</button>   
         </div>
             <div class="bg-lime-100 w-60 h-80 text-center ml-5 space-x-3 flex-col items-center"><img class="w-1/2 mx-16 mb-3 pt-3" src="images/rectangle.png" alt="">
             <h2 class="font-bold text-3xl my-2 ">Rectangle</h2>
@@ -43,7 +43,16 @@
             <h3 class=" gap-3 mb-5">b=10cm, h=12cm</h3>
             <button class="bg-cyan-600 h-10 text-white font-semibold text-lg  px-16 rounded-md" >Calculate</button>   
         </div>
-<div class="bg-lime-100 w-60 h-80 text-center ml-5 text-lg font-semibold"><p> <u>Area Calculation</u> </p></div>
+<div  id="all-calculation" class="bg-lime-100 w-60 h-80 text-center ml-5 text-lg font-semibold"><p> <u>Area Calculation</u> </p>
+<table class="table w-full">
+    <thead>
+        <tr>
+          <th>No</th>
+          <th>Name</th>
+          <th>Total</th>
+        </tr>
+      </thead><tbody id="table-container">
+</tbody></table></div>
        
         <div class="bg-lime-100 w-60 h-80 text-center ml-5 space-x-3 flex-col items-center"><img class="w-1/2 mx-16 mb-3 pt-3" src="images/rhombus.png" alt="">
             <h2 class="font-bold text-3xl my-2 ">Rhombus</h2>
