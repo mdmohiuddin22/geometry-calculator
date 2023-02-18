@@ -16,6 +16,7 @@ if (
     return alert("please enter any valid number");
   }
 const firstTotal = parseFloat(firstInputData) * parseFloat(secondInputData) *multiplyData;
+firstTotal.toFixed(2);
 const container =document.getElementById('table-container');
 const tr = document.createElement("tr");
 tr.innerHTML = `
@@ -37,17 +38,7 @@ document.getElementById("second-card").addEventListener('click',function(){
     const secondCardInput2 =document.getElementById('second-data-input').value;
     const multiplyData = 0.5;
 
-    // if (
-    //     secondCardInput1 == "" ||
-    //     secondCardInput2 == "" ||
-    //     secondCardInput1<= 0 ||
-    //     secondCardInput2 <= 0
-       
-    //   ) {
-    //     return alert("please enter any valid number");
-    //   }
     const secondTotal = parseFloat(secondCardInput1) * parseFloat(secondCardInput2);
-    console.log(secondTotal);
     const container =document.getElementById('table-container');
     const tr = document.createElement("tr");
     tr.innerHTML = `
@@ -66,16 +57,7 @@ document.getElementById("second-card").addEventListener('click',function(){
         console.log(thirdTitleData);
         const b =10;
         const h =12;
-        // const subTotal=document.getElementById('all-calculation')
-        // if (
-        //     secondCardInput1 == "" ||
-        //     secondCardInput2 == "" ||
-        //     secondCardInput1<= 0 ||
-        //     secondCardInput2 <= 0
-           
-        //   ) {
-        //     return alert("please enter any valid number");
-        //   }
+      
         const thirdTotal = b *h;
         const container =document.getElementById('table-container');
         const tr = document.createElement("tr");
@@ -95,16 +77,7 @@ document.getElementById("second-card").addEventListener('click',function(){
         const RhumbusTitleData =document.getElementById('Rhombus-title').innerText;
         const b =16;
         const h =8;
-        // const subTotal=document.getElementById('all-calculation')
-        // if (
-        //     secondCardInput1 == "" ||
-        //     secondCardInput2 == "" ||
-        //     secondCardInput1<= 0 ||
-        //     secondCardInput2 <= 0
-           
-        //   ) {
-        //     return alert("please enter any valid number");
-        //   }
+    
         const RhumbusTotal = b *h;
         const container =document.getElementById('table-container');
         const tr = document.createElement("tr");
@@ -124,16 +97,7 @@ document.getElementById("second-card").addEventListener('click',function(){
         const p =6;
         const b =10;
         const multiply=0.5;
-        // const subTotal=document.getElementById('all-calculation')
-        // if (
-        //     secondCardInput1 == "" ||
-        //     secondCardInput2 == "" ||
-        //     secondCardInput1<= 0 ||
-        //     secondCardInput2 <= 0
-           
-        //   ) {
-        //     return alert("please enter any valid number");
-        //   }
+    
         const PentagonTotal = multiply*p *b;
         const container =document.getElementById('table-container');
         const tr = document.createElement("tr");
@@ -154,16 +118,7 @@ document.getElementById("second-card").addEventListener('click',function(){
         const a =10;
         const b =4;
         const pi =3.14;
-        // const subTotal=document.getElementById('all-calculation')
-        // if (
-        //     secondCardInput1 == "" ||
-        //     secondCardInput2 == "" ||
-        //     secondCardInput1<= 0 ||
-        //     secondCardInput2 <= 0
-           
-        //   ) {
-        //     return alert("please enter any valid number");
-        //   }
+       
         const EllipseTotal = a *b*pi;
         EllipseTotal.toFixed(2)
         const container =document.getElementById('table-container');
@@ -180,5 +135,6 @@ document.getElementById("second-card").addEventListener('click',function(){
        document.getElementById('blog-btn').addEventListener('click',function(){
         window.location.href='blog.html';
        })
+
 
     
