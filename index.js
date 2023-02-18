@@ -170,4 +170,8 @@ document.getElementById("second-card").addEventListener('click',function(){
         container.appendChild(tr);
         });
 
+       document.getElementById('blog-btn').addEventListener('click',function(){
+        window.location.href='blog.html';
+       })
+
     
