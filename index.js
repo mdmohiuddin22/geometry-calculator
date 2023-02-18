@@ -114,11 +114,12 @@ document.getElementById("second-card").addEventListener('click',function(){
         });
         
     // Rhombus 
-    document.getElementById("Rhombus").addEventListener('click',function(){
+    document.getElementById("Pentagon").addEventListener('click',function(){
         serial += 1;
-        const RhumbusTitleData =document.getElementById('Rhombus-title').innerText;
-        const b =16;
-        const h =8;
+        const PentagonTitleData =document.getElementById('Pentagon-title').innerText;
+        const p =6;
+        const b =10;
+        const multiply=0.5;
         // const subTotal=document.getElementById('all-calculation')
         // if (
         //     secondCardInput1 == "" ||
@@ -129,13 +130,13 @@ document.getElementById("second-card").addEventListener('click',function(){
         //   ) {
         //     return alert("please enter any valid number");
         //   }
-        const RhumbusTotal = b *h;
+        const PentagonTotal = multiply*p *b;
         const container =document.getElementById('table-container');
         const tr = document.createElement("tr");
         tr.innerHTML = `
         <td>${1}</td>
-        <td>${RhumbusTitleData}</td>
-        <td>${RhumbusTotal}</td>
+        <td>${PentagonTitleData}</td>
+        <td>${PentagonTotal}</td>
         `;
         container.appendChild(tr);
         });
